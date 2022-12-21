@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="form-head">
+            <a href="index.html" class="btn-back">&lt;</a>
+            <h3 class="form-title">Заявка на вступление</h3>
+        </div>
+        <div class="form-body">
+            <fieldset class="nickname-field">
+                <legend>Ваш никнейм</legend>
+                <input type="text" class="f-name" placeholder="Имя">
+                <input type="text" class="s-name" placeholder="Фамилия">
+            </fieldset>
+            <p class="gender-text">Ваш пол</p>
+            <div class="input-wrapper">
+                <input type="radio" name="gender" id="male-radio">
+                <label for="male-radio">M</label>
+                <input type="radio" name="gender" id="female-radio">
+                <label for="female-radio">Ж</label>
+            </div class="input-wrapper">
+            <div>
+                <input type="checkbox" value="age18" id="age" class="age" name="age">
+                <label for="age">Мне есть 18</label>
+            </div>
+            <div class="input-wrapper">
+                <label for="game">Ваша дисциплина</label>
+                <select name="game" id="game">
+                    <option value="cs-go">CS:GO</option>
+                    <option value="dota-2">Dota 2</option>
+                    <option value="mine-craft">Minecraft</option>
+                </select>
+            </div>
+            <textarea class="text-comment" name="comment" id="comment"
+                placeholder="Дополнительная информация"></textarea>
+            <button class="submit">Отправить заявку</button>
+        </div>
+    </form>
+</body>
+
+</html>
